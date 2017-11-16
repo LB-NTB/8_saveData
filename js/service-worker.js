@@ -3,6 +3,7 @@
 this.addEventListener('fetch', function (event) {
 
   if(event.request.headers.get('save-data')){
+    console.log("sava-data ist ein");
     // We want to save data, so restrict icons and fonts
     if (event.request.url.includes('fonts.googleapis.com')) {
       // return nothing
